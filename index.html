@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 style="margin-left: 20px;">PORTFOLIO</h1>
+        </div>
+        <a class="toggle-button">
+            <span class="hamburger-stripes"></span>
+            <span class="hamburger-stripes"></span>
+            <span class="hamburger-stripes"></span>
+        </a>
+        <nav class="navbar-links">
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#project">PROJECTS</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+
+        <div class="img" id="img">
+            <div class="name">
+                <img src="./images/nitin1.jpg" width="150px" height="150px;">
+                <h1 style="color: white; font-family: 'Ranga', cursive; font-size: 55px;">NITIN VARDA</h1>
+                <div class="contact">
+                    <a href="https://github.com/nitinvarda" target="blank"><img src="images/github-transparent.png"
+                            width="50px" height="50px" /></a>
+                    <a href="https://www.instagram.com/nitinvarda/" target="blank"><img src="images/instagram.png"
+                            style="width:50px; height: 50px;" /></a>
+                    <a href="https://www.facebook.com/nitinvarda" target="blank"><img src="images/facebook.png"
+                            style="widows: 5px; height: 50px;" /></a>
+                    <a href=""><img src="images/gmail-transparen_editedt.png" style="widows: 5px; height: 50px;" /></a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="about" id="about">
+            <h1>Hey!</h1>
+            <h3 id="project">I'm Nitin Varda from India. An Engineering Graduate. </h3>
+            <h3>I love programming and learning new things. </h3>
+
+        </div>
+        <div class="img2" id="img2">
+            <div class="project-title">
+                <h1>PROJECTS</h1>
+            </div>>
+
+        </div>
+        <div id="projects" class="projects">
+            <div class="project-card">
+                <div class="project-header">
+                    <img src="./images/download.png" alt="covid-19">
+
+                </div>
+                <div class="project-body">
+                    <h2><a href="https://covid19indian-state.netlify.app/" target="blank"
+                            style="text-decoration: none;"><b>Covid19</b></a></h2>
+                    <h4 style=" font-family: 'Open Sans Condensed', sans-serif;"><i>This a covid-19 india tracker ,where
+                            we
+                            can see number of confirmed, active, recovered and dead
+                            cases of indian States and Districts. The Data is being collected through an API , the data
+                            which is fetching through API has record of only Districts . using that data i have added
+                            overall india and indian state records explicitly. </i></h4>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <img src="./images/photo.jpg" alt="trendinit">
+
+                </div>
+                <div class="project-body">
+                    <h2><a href="https://trendinit.herokuapp.com/" target="blank"
+                            style="text-decoration: none;"><b>Trendinit</b></a></h2>
+                    <h4 style=" font-family: 'Open Sans Condensed', sans-serif;"><i>This is News Article site which is
+                            built with technologies like Node Js , Express Js and
+                            MongoDB
+                            database. Fully connected to MongoDB database all aricles which we post are saved here and
+                            fetched from here. Posts are maintained by Admins, currently along with me there are 3.</i>
+                    </h4>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <footer>
+        <div class="footer-tab">
+            <div>
+                <h2>Contact me</h2>
+                <h3>nitinvarda@gmail.com</h3>
+                <h5></h5>
+
+            </div>
+
+
+        </div>
+
+
+    </footer>
+
+    <script>
+        var toggle = document.getElementsByClassName('toggle-button')[0];
+        var nav = document.getElementsByClassName('navbar-links')[0];
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        })
+
+    </script>
+
+</body>
+
+</html>
