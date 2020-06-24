@@ -105,7 +105,7 @@ header{
     background: url('./images/galaxy.gif') no-repeat ;
     background-size: cover;
     background-attachment: fixed;
-    height: 105vh;
+    height: 100vh;
 }
 .img2{
     
@@ -131,22 +131,30 @@ header{
 }
 /* projects */
 .projects{
-
+    
     padding-top: 100px;
     padding-bottom: 100px;
     margin: auto;
-    width: 900px;
+    width: 1000px;
     display: grid;
-    gap: 20px;
+    gap: 50px;
     grid-template-columns: repeat(2,1fr);
+    animation:slide;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
    
 
 }
 
+
 .project-card{
     /* background-color: #fff; */
+
     border-radius: 20px ; 
     box-shadow:0 2px 20px rgba(0,0,0,0.4);
+    transition-property: border-radius;
+    transition-duration: 0.5s;
+   
 }
 .project-header img{
     width: 400px;
@@ -169,6 +177,7 @@ header{
     font-size: 30px;
 
 }
+
 
 
 
@@ -253,8 +262,9 @@ footer{
     }
 
     .project-header img{
-        width:95%;
-        margin: auto;
+        width:80%;
+        margin-left: 30px;
+        /* margin: auto; */
         height: 200px;
         object-fit: cover;
     }
