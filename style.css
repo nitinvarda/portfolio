@@ -152,8 +152,7 @@ header{
 
     border-radius: 20px ; 
     box-shadow:0 2px 20px rgba(0,0,0,0.4);
-    transition-property: border-radius;
-    transition-duration: 0.5s;
+  
    
 }
 .project-header img{
