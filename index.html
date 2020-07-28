@@ -5,42 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | nitinvarda</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./new_styles.css">
+    <!-- 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> -->
 
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="logo">
-            <h1 style="margin-left: 20px;">PORTFOLIO</h1>
+            <h1 style="margin-left: 20px;padding-top: 15px;">PORTFOLIO</h1>
         </div>
-        <a class="toggle-button">
-            <span class="hamburger-stripes"></span>
-            <span class="hamburger-stripes"></span>
-            <span class="hamburger-stripes"></span>
-        </a>
-        <nav class="navbar-links">
-            <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#project">PROJECTS</a></li>
+        <div>
 
-            </ul>
-        </nav>
+            <a class="tgl-btn">
+                <span class="hamburger-stripes"></span>
+                <span class="hamburger-stripes"></span>
+                <span class="hamburger-stripes"></span>
+            </a>
+            <nav class="navbarlinks">
+                <ul>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#skills">SKILLS</a></li>
+                    <li><a href="#project">PROJECTS</a></li>
+
+                </ul>
+            </nav>
+        </div>
     </header>
-    <div class="container">
+    <div class="containe">
 
         <div class="img" id="img">
             <div class="name">
-                <img src="./images/nitin1.jpg" width="150px" height="150px;">
-                <h1 style="color: white; font-size: 55px;">NITIN VARDA</h1>
+                <div class="profile-pic">
+                    <img src="./images/nitin1.jpg" width="150px" height="150px;">
+
+                </div>
+                <h3 class="profile-name">NITIN VARDA</h3>
                 <div class="contact">
                     <a href="https://github.com/nitinvarda" target="blank"><img src="images/github-transparent.png"
                             width="50px" height="50px" /></a>
                     <a href="https://www.instagram.com/nitinvarda/" target="blank"><img src="images/instagram (2).png"
-                            style="width:50px; height: 50px;" /></a>
+                            style="width:50px; height: 50px; border-radius: 50%;" /></a>
                     <a href="https://www.facebook.com/nitinvarda" target="blank"><img src="images/facebook.png"
                             style="width: 50px; height: 50px;" /></a>
-                    <a href="https://twitter.com/nitinvarda" target="blank"><img
+                    <a href="https://twitter.com/nitinvarda" target="blank" id="about"><img
                             src="images/twitter-icon-circle-logo (2).png" style="width: 50px; height: 50px;" /></a>
 
                 </div>
@@ -49,63 +67,131 @@
         </div>
         <div class="about" id="about">
             <h1>Hey!</h1>
-            <h3 id="project">I'm Nitin Varda from India. An Engineering Graduate. </h3>
+            <br />
+            <h3>I'm Nitin Varda from India. An Engineering Graduate. </h3>
+            <br />
             <h3>&nbsp;I love programming and learning new skills. </h3>
 
         </div>
+        <!-- <hr /> -->
         <div class="img2" id="img2">
             <div class="project-title">
-                <h1>PROJECTS</h1>
+                <h1 id="skills">Skills</h1>
             </div>
 
         </div>
-        <div id="projects" class="projects">
-            <div class="project-card" id="covid19">
-                <div class="project-header">
-                    <img src="./images/download.png" alt="covid-19">
+        <div class=" skills">
+            <!-- <h1 style="text-align: center;">Skills</h1> -->
+            <br />
+            <div class="skill">
+                <div class="skill-name">
+                    <img class="skill-img" src="images/HTML.png" width="100px" height="100px" />
+                    <h5 style="margin-left:30px;">HTML 5</h5>
+                </div>
+                <div class="skill-name">
+                    <img class="skill-img" src="images/CSS.png" width="100px" height="100px" />
+                    <h5 style="margin-left:40px;">CSS 3</h5>
 
                 </div>
-                <div class="project-body">
-                    <h2><a href="https://covid19indian-state.netlify.app/" target="blank"
-                            style="text-decoration: none;"><b>Covid19</b></a></h2>
-                    <h4><a href="https://github.com/nitinvarda/covid19site" target="blank"
-                            style="text-decoration: none;">github
-                            link</a></h4>
-                    <h4 style=" font-family: 'Open Sans Condensed', sans-serif;">This a covid-19 india tracker ,where
-                        we
-                        can see number of confirmed, active, recovered and dead
-                        cases of indian States and Districts. The Data is being collected through an API , the data
-                        which is fetching through API has record of only Districts . using that data i have added
-                        overall india and indian state records explicitly. </h4>
+                <div class="skill-name">
+                    <img class="skill-img" src="images/javascript .png" width="100px" height="100px" />
+                    <h5 style="margin-left:30px;">JavaScript</h5>
+                </div>
+                <div class=" skill-name">
+                    <img class="skill-img" src="images/react.png" width="100px" height="100px" />
+                    <h5 style="margin-left:35px;">React JS</h5>
+                </div>
+                <div class=" skill-name">
+                    <img class="skill-img" src="images/node.png" width="100px" height="100px" />
+                    <h5 style="margin-left:35px;">NodeJS</h5>
+                </div>
+                <div class=" skill-name">
+                    <img class="skill-img" src="images/express.png" width="100px" height="100px" />
+                    <h5 style="margin-left:30px;">Express JS</h5>
+                </div>
+                <div class="skill-name">
+                    <img class="skill-img" src="images/mongodb.png" width="100px" height="100px" />
+                    <h5 style="margin-left:30px;">MongoDB</h5>
+                </div>
+                <div class="skill-name">
+                    <img class="skill-img" src="images/bootstrap.png" width="90px" height="100px" />
+                    <h5 style="margin-left:25px;">bootstrap</h5>
+                </div>
+                <div class="skill-name">
+                    <img class="skill-img" src="images/jquery.png" width="100px" height="100px" />
+                    <h5 style="margin-left:35px;">jquery</h5>
+                </div>
 
+            </div>
+            <!-- <h1 style="text-align: center;">CSS Frameworks</h1> -->
+            <!-- <div class="skill"> -->
+
+
+            <!-- </div> -->
+
+
+        </div>
+
+
+
+        <div class="img2" id="img2">
+            <div class="project-title">
+                <h1 id="project">PROJECTS</h1>
+            </div>
+
+        </div>
+        <div class="projects-start">
+
+            <div id="projects" class="  projects">
+                <div class=" project-card" id="covid19">
+                    <div class="project-header">
+                        <img src="./images/download.png" alt="covid-19">
+
+                    </div>
+                    <div class="project-body">
+                        <h2><a href="https://covid19indian-state.netlify.app/" target="blank"
+                                style="text-decoration: none;"><b>Covid19-india</b></a></h2>
+                        <br />
+                        <h4><a href="https://github.com/nitinvarda/covid19site" target="blank"
+                                style="text-decoration: none;">github
+                                link</a></h4>
+                        <h4 style=" font-family: 'Open Sans Condensed', sans-serif; padding-top: 40px">This a covid-19
+                            india tracker
+                            ,where we can see number of confirmed, active, recovered and dead
+                            cases of indian States and Districts. The Data is being collected through an API , the data
+                            which is fetching through API has record of only Districts . using that data i have added
+                            overall india and indian state records explicitly. </h4>
+
+
+                    </div>
+
+                </div>
+
+                <div class=" project-card ">
+                    <div class="project-header" id="trendinit">
+                        <img src="./images/photo.jpg" alt="trendinit" style="border-radius: 10px;">
+
+                    </div>
+                    <div class="project-body">
+                        <h2><a href="https://express-react-trendinit.herokuapp.com" target="blank"
+                                style="text-decoration: none;"><b>Trendinit</b></a></h2>
+                        <br />
+                        <h4><a href="https://github.com/nitinvarda/MERN-Trendinit" target="blank"
+                                style="text-decoration: none;">github
+                                link</a></h4>
+                        <h4 style=" font-family: 'Open Sans Condensed', sans-serif; padding-top: 40px;">This is News
+                            Article Blog which is
+                            built with MERN Stack (MongoDB , Express Js,React JS and
+                            Node Js).Fully connected to MongoDB database all articles which I post are saved here and
+                            fetched from here.
+                        </h4>
+
+
+                    </div>
 
                 </div>
 
             </div>
-
-            <div class="project-card">
-                <div class="project-header" id="trendinit">
-                    <img src="./images/photo.jpg" alt="trendinit">
-
-                </div>
-                <div class="project-body">
-                    <h2><a href="https://express-react-trendinit.herokuapp.com" target="blank"
-                            style="text-decoration: none;"><b>Trendinit</b></a></h2>
-                    <h4><a href="https://github.com/nitinvarda/MERN-Trendinit" target="blank"
-                            style="text-decoration: none;">github
-                            link</a></h4>
-                    <h4 style=" font-family: 'Open Sans Condensed', sans-serif;">This is News Article Blog which is
-                        built with technologies MERN Stack (MongoDB , Express Js,React JS and
-                        Node Js).
-                        Fully connected to MongoDB database all articles which I post are saved here and
-                        fetched from here.
-                    </h4>
-
-
-                </div>
-
-            </div>
-
         </div>
 
 
@@ -126,8 +212,8 @@
     </footer>
 
     <script>
-        var toggle = document.getElementsByClassName('toggle-button')[0];
-        var nav = document.getElementsByClassName('navbar-links')[0];
+        var toggle = document.getElementsByClassName('tgl-btn')[0];
+        var nav = document.getElementsByClassName('navbarlinks')[0];
 
         toggle.addEventListener('click', () => {
             nav.classList.toggle('active');
