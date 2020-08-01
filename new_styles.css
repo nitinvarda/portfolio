@@ -15,6 +15,11 @@
 }
 
 /* nav-bar */
+
+.bg-custom{
+    background-color: black;
+    /* color: white; */
+}
 .header{
     display: flex;
     position: fixed;
@@ -130,6 +135,7 @@
 .skill{
     
     display: grid;
+    justify-content: center;
     grid-template-columns: repeat(6,1fr);
     grid-gap: 20px;
 
@@ -142,6 +148,7 @@
     padding-bottom: 50px;
 }
 
+
 .skill-name h5{
     padding-top: 5x;
 }
@@ -149,6 +156,8 @@
 
 
 .skill-img{
+    /* width:60%; */
+    /* margin:auto; */
     margin-left: 10px;
 }
 
@@ -253,7 +262,11 @@ footer{
     }
     /* skills */
     .skill{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(3,1fr);
+    }
+    .skill-name{
+        width:70%;
+        margin:auto
     }
     
     
@@ -313,9 +326,11 @@ footer{
         
         margin: auto;
         grid-gap: 5px;
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns: repeat(2,2fr);
         
     }
+   
+   
 
     /* projects */
     .projects-start{
