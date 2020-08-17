@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./new_styles.css">
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -73,7 +74,7 @@
             </div>
 
         </div>
-        <div class="about" id="about">
+        <div class="about" id="about" data-aos="fade-right" data-aos-delay="150">
             <h1>Hey!</h1>
             <br />
             <h3>I'm Nitin Varda from India. An Engineering Graduate. </h3>
@@ -88,7 +89,7 @@
             </div>
 
         </div>
-        <div class="container skills">
+        <div class="container skills" data-aos="fade-left" data-aos-delay="150">
 
             <br />
             <div class="skill">
@@ -147,7 +148,7 @@
         <div class="projects-start">
 
             <div id="projects" class="  projects">
-                <div class=" project-card" id="covid19">
+                <div class=" project-card" id="covid19" data-aos="fade-right" data-aos-delay="250">
                     <div class="project-header">
                         <img src="./images/download.png" alt="covid-19">
 
@@ -171,7 +172,7 @@
 
                 </div>
 
-                <div class=" project-card ">
+                <div class=" project-card " data-aos="fade-left" data-aos-delay="250">
                     <div class="project-header" id="trendinit">
                         <img src="./images/photo.jpg" alt="trendinit" style="border-radius: 10px;">
 
@@ -204,7 +205,7 @@
         <div class="footer-tab">
             <div>
                 <h5>Contact me</h5>
-                <h5>nitinvarda@gmail.com</h5>
+                <h5>nitinvardha09@gmail.com</h5>
 
 
             </div>
@@ -216,7 +217,10 @@
     </footer>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

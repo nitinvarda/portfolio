@@ -7,7 +7,7 @@
 }
 
 .containe{
-    
+    overflow-x: hidden;
     width: 100%;
     margin-top: 50px;
     
@@ -124,7 +124,7 @@
 /* about */
 .about {
     text-align: center;
-    
+    overflow: hidden;
     font-size: 25px;
     padding-bottom: 30px;
 }
