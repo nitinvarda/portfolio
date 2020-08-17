@@ -207,12 +207,21 @@
     margin-left: 20px;
     height: 30vh;
     object-fit: cover;
+    border-radius: 10px;
     
+}
+.project-header-trendinit img{
+    width: 90%;
+    margin-left: 20px;
+    height: 30vh;
+    object-fit: contain;
+    border-radius: 10px;
+
 }
 .project-body{
     display: flex;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     
     margin: auto;
     width: 80%;
@@ -225,6 +234,13 @@
     font-size: 30px;
 
 }
+.project-links{
+    display: flex;
+    
+    justify-content: space-around;
+}
+
+
 
 
 /* footer-tab */
