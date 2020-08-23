@@ -79,10 +79,10 @@
 
 
 .img{
-    /* <iframe src='https://gfycat.com/ifr/NiftyIgnorantLeech' frameborder='0' scrolling='no' allowfullscreen width='640' height='404'></iframe><p> <a href="https://gfycat.com/niftyignorantleech">via Gfycat</a></p> */
-    background: url('http://trendinit.herokuapp.com/image/61d1ed2c3a2148bb51a8939938c06455.gif') no-repeat ;
+    background-color: black;
+    /* background: url('http://trendinit.herokuapp.com/image/61d1ed2c3a2148bb51a8939938c06455.gif') no-repeat ;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     height: 93vh;
 }
 .profile-name{
@@ -169,10 +169,10 @@
     margin: auto;
 }
 .img2{
-    
-    background: url('http://trendinit.herokuapp.com/image/61d1ed2c3a2148bb51a8939938c06455.gif') no-repeat ;
+    background-color: black;
+    /* background: url('http://trendinit.herokuapp.com/image/61d1ed2c3a2148bb51a8939938c06455.gif') no-repeat ;
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed; */
     height: 80px;
 }
 .project-title{
