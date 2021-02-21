@@ -20,7 +20,7 @@ function ProfileScreen() {
                     <Image src="./images/nitin1.jpg" width='170px' height='170px' alt='profile' roundedCircle fluid />
 
                 </div>
-                <h1 className='text-center my-4 text-white'>NITIN VARDA</h1>
+                <h3 className='text-center my-4 text-white'>NITIN VARDA</h3>
                 <div style={styles.socialLinks}>
 
                     <a href="https://github.com/nitinvarda" target="blank"><img src="images/github.png"
