@@ -1,10 +1,11 @@
 import React from 'react'
 import { Container, Col, Row } from 'react-bootstrap'
+import Particle from './Particle'
 
 function AboutScreen() {
     return (
         <div>
-
+            
             <div style={styles.about} id="about" data-aos='slide-up'  >
                 <h1>Hey!</h1>
                 <br />
@@ -13,12 +14,21 @@ function AboutScreen() {
                 <h3>&nbsp;I love programming and learning new skills. </h3>
 
             </div>
+        
 
-            <div style={styles.headingBackground} id="img2">
+            {/* <div style={styles.headingBackground} id="img2">
                 <div style={styles.projectTitle} >
                     <h1 id="skills">Skills</h1>
                 </div>
 
+            </div> */}
+            <div style={{backgroundColor:'#222',position:'relative',height:80}}>
+
+                <Particle height={80} color={'#fff'} />
+                <div style={{position:'absolute',top:10,display:'flex',flexDirection:'row',justifyContent:'center',width:'100%',color:'white'}} >
+                    <h2 id="skills">Skills</h2>
+                </div>
+                
             </div>
             <Container >
                 <Row>

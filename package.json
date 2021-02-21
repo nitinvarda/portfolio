@@ -11,7 +11,9 @@
     "react-animation-components": "^3.0.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.14.0",
-    "react-scripts": "3.4.3"
+    "react-particles-js": "^3.4.1",
+    "react-scripts": "3.4.3",
+    "react-tsparticles": "^1.18.12"
   },
   "scripts": {
     "start": "react-scripts start",

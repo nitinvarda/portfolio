@@ -1,14 +1,23 @@
 import React from 'react'
 import { Card, Button, Col, Container, Row, ButtonGroup } from 'react-bootstrap'
+import Particle from './Particle'
 
 function ProjectScreen() {
     return (
         <div>
-            <div style={styles.projectHeading} id="img2" >
+            {/* <div style={styles.projectHeading} id="img2" >
                 <div style={styles.projectTitle}>
                     <h1 id="project">PROJECTS</h1>
                 </div>
 
+            </div> */}
+            <div style={{backgroundColor:'#222',position:'relative'}}>
+
+            <Particle height={80} color={'#fff'}  shapeColor={'#000'} />
+            <div style={{position:'absolute',top:10,display:'flex',flexDirection:'row',justifyContent:'center',width:'100%',color:'white'}}>
+                <h2>Projects</h2>
+
+            </div>
             </div>
             <Container>
                 <Row>

@@ -1,11 +1,18 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
+import Particles from "react-tsparticles";
+import './ProfileScreen.css'
+import Particle from './Particle'
 
 
 function ProfileScreen() {
     return (
-        <div style={styles.img} id="home">
-            <div style={{ paddingTop: '20vh' }}>
+        <div  id="home">
+          <div style={{backgroundColor:'#222'}}>
+
+            <Particle  height={'100vh'} color={"#fff"} shapeColor={'#000'}/>
+          </div>
+            <div style={{ paddingTop: '20vh',position:'absolute',top:0,width:'100%' }}>
 
 
                 <div className="d-flex flex-row justify-content-center  ">
