@@ -4,7 +4,7 @@ import ProfileScreen from './screens/ProfileScreen'
 import AboutScreen from './screens/AboutScreen'
 import ProjectScreen from './screens/ProjectScreen'
 import Footer from './components/Footer'
-import Particle from './screens/Particle'
+
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <AboutScreen />
       <ProjectScreen />
       <Footer />
-      {/* <Particle /> */}
+     
 
 
 

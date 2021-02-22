@@ -1,6 +1,5 @@
 import React from 'react'
 import { Image } from 'react-bootstrap'
-import Particles from "react-tsparticles";
 import './ProfileScreen.css'
 import Particle from './Particle'
 
