@@ -1,0 +1,27 @@
+name {
+    overflow: hidden;
+    border-right: 5px solid white;
+    white-space: nowrap;
+    margin: 0 auto;
+    /* letter-spacing: 15em; */
+    animation: typing 4.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0px;
+    }
+    to {
+      width: 80%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: black;
+    }
+  }
