@@ -48,7 +48,7 @@ const styles = {
         borderRadius: 50,
         alignItems:'center',
         padding: 10,
-        width: 'clamp(400px,65%,85%)',
+        width: 'clamp(300px,65%,80%)',
         // margin: 'auto',
         marginTop: 35
     },
