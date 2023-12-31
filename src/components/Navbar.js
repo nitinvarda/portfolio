@@ -1,10 +1,10 @@
 import React from 'react';
 // import './Navbar.css';
 import { Navbar, Nav, Container } from 'react-bootstrap'
+
 const NavBar = () => {
     return (
-
-        <Navbar collapseOnSelect style={{ backgroundColor: '#222' }} expand="lg" variant="dark" fixed="top">
+        <Navbar collapseOnSelect style={{ backgroundColor: '#222',}} expand="lg" variant="dark" fixed="top">
             <Container>
                 {/* <Navbar.Brand href="#home"><h3 style={{fontFamily:'Sacramento'}}>Nitin Varda</h3></Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
