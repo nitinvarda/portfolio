@@ -31,12 +31,14 @@ function ProjectScreen() {
                                     can add items to favorites . User should authenticate first to do any actions on
                                     site. It is made with MERN stack along with redux for state management.
                         </Card.Text>
+                            <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
 
                                 <ButtonGroup aria-label="Basic example">
-                                    <Button variant="dark" href="https://ristorante-conf.herokuapp.com" target='blan   k' >Site Link</Button>
+                                    {/* <Button variant="dark" href="https://ristorante-conf.herokuapp.com" target='blan   k' >Site Link</Button> */}
                                     <Button variant="secondary" href="https://github.com/nitinvarda/Confusion-fullstack" target='blank'>Github Link</Button>
-                                    <Button variant="dark" href="https://github.com/nitinvarda/reactnative-confusion" target="blank">Native Github Link</Button>
+                                    <Button variant="dark" href="https://github.com/nitinvarda/reactnative-confusion" target="blank">React Native Github Link</Button>
                                 </ButtonGroup>
+                            </div>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -49,12 +51,14 @@ function ProjectScreen() {
                                     This is an E-commerce Site built with MERN Stack (MongoDB, Express Js,
                                     React JS, and Node Js). With Redux and PayPal Sandbox for mock payments
                         </Card.Text>
+                            <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
 
                                 <ButtonGroup aria-label="Basic example">
-                                    <Button variant="dark" href="https://proshop1.herokuapp.com" target='blank'>Site Link</Button>
+                                    {/* <Button variant="dark" href="https://proshop1.herokuapp.com" target='blank'>Site Link</Button> */}
                                     <Button variant="secondary" href="https://github.com/nitinvarda/proshop" target='blank'>Github Link</Button>
-                                    <Button variant="dark" href="https://github.com/nitinvarda/Proshop_ReactNative" target="blank">Native Github Link</Button>
+                                    <Button variant="dark" href="https://github.com/nitinvarda/Proshop_ReactNative" target="blank">React Native Github Link</Button>
                                 </ButtonGroup>
+                            </div>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -69,12 +73,14 @@ function ProjectScreen() {
                                     This is a News Article Blog which is built with MERN Stack (MongoDB,
                                     Express Js, React JS, and Node Js). Only Admin can add, edit, or delete posts
                         </Card.Text>
+                            <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
 
                                 <ButtonGroup aria-label="Basic example">
-                                    <Button variant="dark" href="https://trendinit.herokuapp.com" target='blank'>Site Link</Button>
+                                    {/* <Button variant="dark" href="https://trendinit.herokuapp.com" target='blank'>Site Link</Button> */}
                                     <Button variant="secondary" href="https://github.com/nitinvarda/trendinit-react-redux-" target='blank'>Github Link</Button>
-                                    <Button variant="dark" href="https://github.com/nitinvarda/Trendinit_ReactNative" target="blank">Native Github Link</Button>
+                                    <Button variant="dark" href="https://github.com/nitinvarda/Trendinit_ReactNative" target="blank">React Native Github Link</Button>
                                 </ButtonGroup>
+                            </div>
                             </Card.Body>
                         </Card>
                     </Col>
@@ -88,12 +94,14 @@ function ProjectScreen() {
                                     This is an E-commerce Site built with MERN Stack (MongoDB, Express Js,
                                     React JS, and Node Js). With Redux and PayPal Sandbox for mock payments
                                 </Card.Text>
+                                <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
 
-                                <ButtonGroup aria-label="Basic example">
-                                    <Button variant="dark" href="https://covid19indian-state.netlify.app" target="blank">Site Link</Button>
-                                    <Button variant="secondary" href="https://github.com/nitinvarda/covid19site" target="blank">Github Link</Button>
+                                    <ButtonGroup aria-label="Basic example">
+                                        <Button variant="dark" href="https://covid19indian-state.netlify.app" target="blank">Site Link</Button>
+                                        <Button variant="secondary" href="https://github.com/nitinvarda/covid19site" target="blank">Github Link</Button>
 
-                                </ButtonGroup>
+                                    </ButtonGroup>
+                                </div>
                             </Card.Body>
                         </Card>
                     </Col>

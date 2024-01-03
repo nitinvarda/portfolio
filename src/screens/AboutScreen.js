@@ -10,7 +10,7 @@ function AboutScreen() {
             <div style={styles.about} id="about" data-aos='slide-up'  >
                 <h1>Hey!</h1>
                 <br />
-                <h3 id="name">I'm Nitin Varda from India. A Software Developer. </h3>
+                <h3 id="name">I'm Nitin Varda. A Software Developer. </h3>
                 <br />
                 <h3>&nbsp;I love programming and learning new skills. </h3>
 
