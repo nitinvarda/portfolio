@@ -13,7 +13,7 @@ function ProjectScreen() {
             </div> */}
             <div style={{backgroundColor:'#222',position:'relative'}}>
 
-            <Particle height={80} color={'#fff'}  shapeColor={'#000'} />
+            {/* <Particle height={80} color={'#fff'}  shapeColor={'#000'} /> */}
             <div style={{position:'absolute',top:10,display:'flex',flexDirection:'row',justifyContent:'center',width:'100%',color:'white'}}>
                 <h2>Projects</h2>
 

@@ -11,7 +11,7 @@ function ProfileScreen(props) {
         <div style={{ width:'100%',height:'95vh',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center', }}>
             <div style={{backgroundColor:'#222',position:'absolute',width:'100%',height:'95vh',zIndex:-1}}>
 
-            <Particle  height={'100%'} color={"#fff"} shapeColor={'#000'} />
+            <Particle id={'profileScreen-particles'} height={'100%'} width={'100%'} />
             </div>
 
             <div  >
