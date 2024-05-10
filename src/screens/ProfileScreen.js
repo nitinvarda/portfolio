@@ -8,9 +8,9 @@ import Theme from '../utils/Theme';
 function ProfileScreen(props) {
     const context = useContext(AppContext);
     
-    
+    console.log(context)
     return (
-        <div style={{backgroundColor:Theme(context.darkTheme).textColor, width:'100%',height:'95vh',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+        <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor, width:'100%',height:'95vh',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
         
         
         
@@ -28,7 +28,7 @@ function ProfileScreen(props) {
                         fontSize:`clamp(3.3rem ,  -0.875rem + 9.333vw, 4.5rem)`,
                         margin:0,
                         fontWeight:'bold',
-                        color:Theme(context.darkTheme).backgroundColor
+                        color:Theme(context.darkTheme).textColor
                         }}>Nitin Varda</h1>
                     <div style={{
                         display:'flex',
@@ -36,15 +36,15 @@ function ProfileScreen(props) {
                         alignItems:'center',
                         margin:"20px 0 20px 0",
                         justifyContent:'space-between',
-                        backgroundColor:Theme(context.darkTheme).backgroundColor,
+                        backgroundColor:Theme(context.darkTheme).textColor,
                         padding:15,
                         borderRadius:50,
                         }}>
-                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'github.png': 'github-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
-                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'linkedIn.png' : 'linkedIn-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
-                                <a href=''><img src={`images/updatedImages/${context.darkTheme ?'stackOverflow.png' :'stackOverflow-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
-                                <a href=''><img src={`images/updatedImages/${context.darkTheme ?'npm.png' :'npm-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
-                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'medium.png':'medium-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'github-d.png': 'github.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'linkedIn-d.png' : 'linkedIn.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ?'stackOverflow-d.png' :'stackOverflow.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ?'npm-d.png' :'npm.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'medium-d.png':'medium.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
                         </div>
                 </div>
 
@@ -64,7 +64,7 @@ function ProfileScreen(props) {
                          style={{
                             fontStyle:'italic',
                             fontSize:`clamp(1.4rem ,  -0.875rem + 6.333vw, 2.2rem)`,
-                            color:Theme(context.darkTheme).backgroundColor
+                            color:Theme(context.darkTheme).textColor
                             }}>Hi there ! I am a passionate <br /> <em><b style={{color:'green'}}>Software Developer</b></em> <br /> with two years of hands-on experience in crafting digital solutions. My journey in the world of coding has been a thrilling ride, and I'm excited to learn new skills.</h3>
                     </div>
                 </Col>
