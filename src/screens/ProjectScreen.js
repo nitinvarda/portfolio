@@ -1,24 +1,25 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Card, Button, Col, Container, Row, ButtonGroup } from 'react-bootstrap'
 import Particle from './Particle'
+import Section from '../components/Section'
+import Theme from '../utils/Theme'
+import AppContext from '../utils/AppContext'
 
 function ProjectScreen() {
+    const context = useContext(AppContext);
     return (
-        <div>
-            {/* <div style={styles.projectHeading} id="img2" >
-                <div style={styles.projectTitle}>
-                    <h1 id="project">PROJECTS</h1>
-                </div>
+        <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
+            
+            <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor,position:'relative',height:80}}>
+            <Container>
 
-            </div> */}
-            <div style={{backgroundColor:'#222',position:'relative'}}>
-
-            {/* <Particle height={80} color={'#fff'}  shapeColor={'#000'} /> */}
-            <div style={{position:'absolute',top:10,display:'flex',flexDirection:'row',justifyContent:'center',width:'100%',color:'white'}}>
-                <h2>Projects</h2>
-
+            {/* <Particle  /> */}
+            <Section name="Projects" />
+            </Container>
             </div>
-            </div>
+            <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
+
+          
             <Container>
                 <Row>
                     <Col md={6} lg={5} style={{ padding: 20 }} data-aos='fade-down-right'  >
@@ -107,6 +108,7 @@ function ProjectScreen() {
                     </Col>
                 </Row>
             </Container>
+            </div>
         </div>
     )
 }

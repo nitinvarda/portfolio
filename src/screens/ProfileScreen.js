@@ -1,41 +1,80 @@
-import React from 'react'
-import { Image } from 'react-bootstrap'
+import React, { useContext } from 'react'
+import { Container, Image,Row,Col } from 'react-bootstrap'
 import Particle from './Particle'
+import AppContext from '../utils/AppContext'
+import Theme from '../utils/Theme';
 
 
 function ProfileScreen(props) {
+    const context = useContext(AppContext);
+    
     
     return (
-        <div  id="home"  >
-         
-        <div style={{ width:'100%',height:'95vh',display:'flex',flexDirection:'column',alignItems:'center',justifyContent:'center', }}>
-            <div style={{backgroundColor:'#222',position:'absolute',width:'100%',height:'95vh',zIndex:-1}}>
+        <div style={{backgroundColor:Theme(context.darkTheme).textColor, width:'100%',height:'95vh',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+        
+        
+        
+        <Container >
+            <Row   style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}} >
+                <Col lg={5}  style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
+           
+                <div  style={{borderRadius:20,flexDirection:'row',justifyContent:'center',alignItems:'center',padding:20}} >
+                    {/* <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
 
-            <Particle id={'profileScreen-particles'} height={'100%'} width={'100%'} />
-            </div>
+                        <Image src="./images/nitinvarda.jpeg"  alt='profile' style={{width:220,height:220,objectFit:'cover',borderColor:"#333333",border:"2px solid #333333"}} roundedCircle fluid />
+                    </div> */}
+                    <h1 className='text-center ' style={{
+                        fontFamily:'Sacramento',
+                        fontSize:`clamp(3.3rem ,  -0.875rem + 9.333vw, 4.5rem)`,
+                        margin:0,
+                        fontWeight:'bold',
+                        color:Theme(context.darkTheme).backgroundColor
+                        }}>Nitin Varda</h1>
+                    <div style={{
+                        display:'flex',
+                        flexDirection:'row',
+                        alignItems:'center',
+                        margin:"20px 0 20px 0",
+                        justifyContent:'space-between',
+                        backgroundColor:Theme(context.darkTheme).backgroundColor,
+                        padding:15,
+                        borderRadius:50,
+                        }}>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'github.png': 'github-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'linkedIn.png' : 'linkedIn-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ?'stackOverflow.png' :'stackOverflow-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ?'npm.png' :'npm-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                                <a href=''><img src={`images/updatedImages/${context.darkTheme ? 'medium.png':'medium-d.png'}`} style={{ width: 35, height: 35, borderRadius: '50%', }} /></a>
+                        </div>
+                </div>
 
-            <div  >
 
-                <Image src="./images/nitinvarda.jpeg"  alt='profile' style={{width:220,height:220,objectFit:'cover'}} roundedCircle fluid />
+                </Col>
+                <Col  lg={7} >
+                    <div style={{
+                        display:'flex',
+                        flexDirection:'column',
+                        justifyContent:'center',
+                        alignItems:'center',
+                        
+                        }}>
 
-            </div>
-            <h1 className='text-center my-4 text-white' style={{fontFamily:'Sacramento',fontSize:`clamp(3.3rem ,  -0.875rem + 9.333vw, 4.5rem)`,margin:0,fontWeight:'bold'}}>Nitin Varda</h1>
-            <div style={styles.socialLinks}>
+                        
+                         <h3 className='text-center' 
+                         style={{
+                            fontStyle:'italic',
+                            fontSize:`clamp(1.4rem ,  -0.875rem + 6.333vw, 2.2rem)`,
+                            color:Theme(context.darkTheme).backgroundColor
+                            }}>Hi there ! I am a passionate <br /> <em><b style={{color:'green'}}>Software Developer</b></em> <br /> with two years of hands-on experience in crafting digital solutions. My journey in the world of coding has been a thrilling ride, and I'm excited to learn new skills.</h3>
+                    </div>
+                </Col>
+            </Row>
 
-                <a href="https://github.com/nitinvarda" target="blank"><img src="images/github.png"
-                    width="50px" height="50px" alt='github' /></a>
-                <a href="https://www.linkedin.com/in/nitin-varda-23b853196/" target="blank"><img src="images/linked-in.jpg"
-                    style={{ width: 55, height: 55, borderRadius: '50%' }} alt='linked' /></a>
-                <a href="https://stackoverflow.com/users/9790809/nitin-varda" target="blank" id="about"><img
-                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC94ZonX3gJoKrvOmZynNWQhq6Wask4tujtuUc04plT8-UTEKJDZ4163Hz-3vltLonV9U&usqp=CAU" style={{ width: 50, height: 50,borderRadius:'50%' }} alt='twitter' /></a>
-                <a href="https://www.npmjs.com/~nitinvarda" target="blank" id="about"><img
-                    src="https://icons.veryicon.com/png/o/miscellaneous/eva-fill/npm-3.png" style={{ width: 50, height: 50,borderRadius:'50%' }} alt='twitter' /></a>
-                <a href="https://nitinvarda.medium.com/" target="blank" id="about"><img
-                    src="https://cdn4.iconfinder.com/data/icons/social-media-circle-7/512/Medium_circle-512.png" style={{ width: 50, height: 50,borderRadius:'50%' }} alt='twitter' /></a>
-
-            </div>
-        </div>
+     
+      
+          </Container>
           </div>
+        
         
     )
 }
