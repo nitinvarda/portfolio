@@ -9,6 +9,7 @@ import Experience from './screens/Experience';
 import AppContext from './utils/AppContext';
 import Skills from './screens/Skills';
 import OpenSource from './screens/OpenSource';
+import Projects from './screens/Projects';
 
 
 
@@ -48,6 +49,7 @@ const changeTheme = () =>{
       <ProfileScreen />
       <Experience sticky={onWorkExperience} />
       <OpenSource />
+      <Projects />
       {/* <Skills /> */}
       <ProjectScreen />
 

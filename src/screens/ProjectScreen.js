@@ -14,7 +14,7 @@ function ProjectScreen() {
             <Container>
 
             {/* <Particle  /> */}
-            <Section name="Projects" />
+            <Section name="Personal Projects" />
             </Container>
             </div>
             <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>

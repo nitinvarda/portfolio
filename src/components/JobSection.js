@@ -9,7 +9,7 @@ export default function JobSection(props) {
     
   return (
    
-        <>
+        <Row style={{margin:"10px 0px"}}>
             <Col lg={4} md={5} >
                 <div style={{backgroundColor:'white',padding:"20px 20px",borderRadius:10}}>
 
@@ -40,7 +40,7 @@ export default function JobSection(props) {
             
             </Col>
 
-        </>
+        </Row>
   
   )
 }

@@ -9,6 +9,7 @@ import Theme from '../utils/Theme';
 
 export default function Experience(props) {
     const context = useContext(AppContext);
+    const {experience} = Data;
   return (
     <div style={{
         position:'relative',
@@ -16,17 +17,18 @@ export default function Experience(props) {
         flexDirection:'row',
         alignItems:'center',
         backgroundColor:Theme(context.darkTheme).backgroundColor,
-        padding:"20px 0px"
+        padding:"20px 0px",
+    
         }}>
        <Container>
 
       <Section name="Experience" />
         
 
-        <Row>
-            {Data.length > 0 && Data.map((item,index)=><JobSection index={index} item={item} />)}
+       
+            {experience.length > 0 && experience.map((item,index)=><JobSection index={index} item={item} />)}
             
-        </Row>
+      
        </Container>
     </div>
   )

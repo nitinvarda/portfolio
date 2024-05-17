@@ -16,4 +16,16 @@ let experience =[
     
 ]
 
-export default experience;
+let projects = [
+    {
+        name:'Riku',
+        images:['https://static.wixstatic.com/media/ed7ee6_756a82b5c1d64c30886ace3f294a9db3~mv2.png/v1/fill/w_742,h_494,fp_0.52_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20Riku%20Front%20View.png','https://static.wixstatic.com/media/721c0e_bf586fd0ceba4e9890d74e32c0a4fa08~mv2.png/v1/crop/x_121,y_0,w_1380,h_844/fill/w_742,h_454,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20Carousel%204%20(1)%201.png','https://static.wixstatic.com/media/721c0e_9a790aeb894a4fb9971df248661ea3dd~mv2.png/v1/crop/x_239,y_0,w_873,h_622/fill/w_742,h_454,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20carousel%202%20(1)%201.png'],
+        description:"Created an interface to control automated cooking equipment. Utilizing React and Electron, developed an application that connects to the machine via MQTT, ensuring smooth command execution.",
+    },{
+        name:'Klynk',
+        images:['https://play-lh.googleusercontent.com/_H_Jm-RaqJWHJx9GOCdLud5CA8mPg5t62hGkfMn2Sf_i5prUp2x8wcNtaopeCF1oPD8W=w5120-h2880-rw'],
+        description:'Developed a hybrid mobile application tailored for controlling automated cooking appliances. Developed with React Native and SSL, the app offers intuitive interface functionality, allowing users to execute commands conveniently from their mobile devices.'
+    }
+]
+
+export default {experience,projects};
