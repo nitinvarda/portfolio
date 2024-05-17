@@ -50,7 +50,7 @@ const changeTheme = () =>{
       <Experience sticky={onWorkExperience} />
       <OpenSource />
       <Projects />
-      {/* <Skills /> */}
+      <Skills />
       <ProjectScreen />
 
       <Footer />

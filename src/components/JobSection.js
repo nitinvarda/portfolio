@@ -11,7 +11,7 @@ export default function JobSection(props) {
    
         <Row style={{margin:"10px 0px"}}>
             <Col lg={4} md={5} >
-                <div style={{backgroundColor:'white',padding:"20px 20px",borderRadius:10}}>
+                <div style={{backgroundColor:'white',padding:"20px 20px",borderRadius:10,border:"1px solid #222222"}}>
 
                     <img 
                     src={item.companyImage} 

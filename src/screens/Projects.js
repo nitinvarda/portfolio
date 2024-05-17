@@ -15,24 +15,41 @@ export default function Projects(props) {
         <Section name="Projects" />
        
             {projects.length > 0 && projects.map((item,key)=>{
-                console.log(key,key%2==0,key%2==0 ? 2 : 1)
+             
                 return(
                     <Row >
                     <Col 
                     lg={{order:item.name=='Riku' ? 1 : 2,span:6}} 
                     style={{display:'flex',justifyContent:'center',alignItems:'center'}}
                     >
-                    <Carousel>
-                        {item.images?.map(img=>(
-                            <Carousel.Item>
-                                <Image src={img} thumbnail fluid  style={{height:400,width:item.name=='Riku' ? 500 : 200}}/>
+                    <Carousel indicators={false} controls={false} fade >
+                        {item.images?.map((img,key)=>(
+                            <Carousel.Item style={{
+                                display:'flex',
+                                flexDirection:'row',
+                                justifyContent:'space-around',
+                                width:'100%',
+                                height:'50vh',
+                                marginBottom:10
+                                }}>
+                                    
+
+                              
+                                 
+                                    <Image src={img.img}  style={{height:'100%',width:item.name=='Riku' ? '100%':'40%',borderRadius:5}}/>
+                                    
+                               
+                                
+
+                                
                             </Carousel.Item>
 
                         ))}
                     </Carousel>
                     </Col>
-                    <Col lg={{order:item.name=='Riku' ? 2 : 1,span:6}} >
-                        <h5 style={{color:Theme(context.darkTheme).textColor}}>{item.name}</h5>
+                    
+                    <Col lg={{order:item.name=='Riku' ? 2 : 1,span:6}} style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                        <h4 style={{color:Theme(context.darkTheme).textColor}}>{item.name}</h4>
                         <p style={{color:Theme(context.darkTheme).textColor}}>{item.description}</p>
                     </Col>
                     </Row>

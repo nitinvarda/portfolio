@@ -19,13 +19,76 @@ let experience =[
 let projects = [
     {
         name:'Riku',
-        images:['https://static.wixstatic.com/media/ed7ee6_756a82b5c1d64c30886ace3f294a9db3~mv2.png/v1/fill/w_742,h_494,fp_0.52_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20Riku%20Front%20View.png','https://static.wixstatic.com/media/721c0e_bf586fd0ceba4e9890d74e32c0a4fa08~mv2.png/v1/crop/x_121,y_0,w_1380,h_844/fill/w_742,h_454,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20Carousel%204%20(1)%201.png','https://static.wixstatic.com/media/721c0e_9a790aeb894a4fb9971df248661ea3dd~mv2.png/v1/crop/x_239,y_0,w_873,h_622/fill/w_742,h_454,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20carousel%202%20(1)%201.png'],
+        images:[{img:'https://static.wixstatic.com/media/ed7ee6_756a82b5c1d64c30886ace3f294a9db3~mv2.png/v1/fill/w_742,h_494,fp_0.52_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20Riku%20Front%20View.png'},{img:'https://static.wixstatic.com/media/721c0e_bf586fd0ceba4e9890d74e32c0a4fa08~mv2.png/v1/crop/x_121,y_0,w_1380,h_844/fill/w_742,h_454,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20Carousel%204%20(1)%201.png'},{img:'https://static.wixstatic.com/media/721c0e_9a790aeb894a4fb9971df248661ea3dd~mv2.png/v1/crop/x_239,y_0,w_873,h_622/fill/w_742,h_454,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Copy%20of%20carousel%202%20(1)%201.png'}],
         description:"Created an interface to control automated cooking equipment. Utilizing React and Electron, developed an application that connects to the machine via MQTT, ensuring smooth command execution.",
-    },{
+    },
+    {
         name:'Klynk',
-        images:['https://play-lh.googleusercontent.com/_H_Jm-RaqJWHJx9GOCdLud5CA8mPg5t62hGkfMn2Sf_i5prUp2x8wcNtaopeCF1oPD8W=w5120-h2880-rw'],
+        images:[
+            {
+                img:'images/Klynk/home.png',
+                title:'Browse Recipes',
+                description:''
+            },
+            {
+                img: 'images/Klynk/login.png',
+                title:'Login',
+                description:''
+            },
+            {
+                img: 'images/Klynk/recipe.png',
+                title:'Recipes',
+                description:''
+            },
+            {
+                img:'images/Klynk/shoppingList.png',
+                title:'List',
+                description:''
+            },
+            {
+                img:'images/Klynk/settings.png',
+                title:'Settings',
+                description:''
+            },
+            {
+                img: 'images/Klynk/devices.png',
+                title:'Devices',
+                description:''
+            }
+        ],
         description:'Developed a hybrid mobile application tailored for controlling automated cooking appliances. Developed with React Native and SSL, the app offers intuitive interface functionality, allowing users to execute commands conveniently from their mobile devices.'
     }
 ]
 
-export default {experience,projects};
+let personalProjects =[
+    {
+        description:'This is Restaurant website where you can reserve table on selected date and can add items to favorites . User should authenticate first to do any actions on site. It is made with MERN stack along with redux for state management.',
+        img:'images/RISTORANTE.png',
+        name:'Ristorante',
+        github_react:'https://github.com/nitinvarda/Confusion-fullstack',
+        github_reactNative:'https://github.com/nitinvarda/reactnative-confusion'
+    },
+    {
+        description:'This is an E-commerce Site built with MERN Stack (MongoDB, Express Js, React JS, and Node Js). With Redux and PayPal Sandbox for mock payments',
+        img:'images/PROSHOP.png',
+        name:'Proshop',
+        github_react:'https://github.com/nitinvarda/proshop',
+        github_reactNative:'https://github.com/nitinvarda/Proshop_ReactNative'
+    },
+    {
+        description:'This is a News Article Blog which is built with MERN Stack (MongoDB, Express Js, React JS, and Node Js). Only Admin can add, edit, or delete posts',
+        img:'images/TRENDINIT.png',
+        name:'Trendinit',
+        github_react:'https://github.com/nitinvarda/trendinit-react-redux-',
+        github_reactNative:'https://github.com/nitinvarda/Trendinit_ReactNative'
+    },
+    {
+        description:'',
+        img:'images/COVID-19.png',
+        name:'Covid-19',
+        github_react:'https://covid19indian-state.netlify.app',
+        github_reactNative:'https://github.com/nitinvarda/covid19site'
+    },
+]
+
+export default {experience,projects,personalProjects};

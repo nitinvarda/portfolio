@@ -7,20 +7,7 @@ function AboutScreen() {
     return (
        
         <div >
-            <div style={{backgroundColor:'#222',position:'relative',height:80}}>
             <Container>
-            <Particle id={'aboutScreen-particles'} />
-                
-                <div style={{position:'absolute',top:15,alignItems:'center',display:'flex',flexDirection:'row',color:'white'}} >
-                    <h2 id="skills">Work experience</h2>
-                </div>
-                
-            </Container>
-            </div>
-            <Container>
-
-          
-            
                 <Row>
                     <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up-right'>
                         <div style={styles.skillContainer}>

@@ -4,9 +4,12 @@ import Particle from './Particle'
 import Section from '../components/Section'
 import Theme from '../utils/Theme'
 import AppContext from '../utils/AppContext'
+import Data from '../utils/Data'
+import ProjectCard from '../components/ProjectCard'
 
 function ProjectScreen() {
     const context = useContext(AppContext);
+    const {personalProjects} = Data;
     return (
         <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
             
@@ -22,91 +25,21 @@ function ProjectScreen() {
           
             <Container>
                 <Row>
-                    <Col md={6} lg={5} style={{ padding: 20 }} data-aos='fade-down-right'  >
-                        <Card style={styles.cardStyle} >
-                            <Card.Img className="p-5" variant="top" src="images/RISTORANTE.png" />
-                            <Card.Body>
-
-                                <Card.Text>
-                                    This is Restaurant website where you can reserve table on selected date and
-                                    can add items to favorites . User should authenticate first to do any actions on
-                                    site. It is made with MERN stack along with redux for state management.
-                        </Card.Text>
-                            <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-
-                                <ButtonGroup aria-label="Basic example">
-                                    {/* <Button variant="dark" href="https://ristorante-conf.herokuapp.com" target='blan   k' >Site Link</Button> */}
-                                    <Button variant="secondary" href="https://github.com/nitinvarda/Confusion-fullstack" target='blank'>Github Link</Button>
-                                    <Button variant="dark" href="https://github.com/nitinvarda/reactnative-confusion" target="blank">React Native Github Link</Button>
-                                </ButtonGroup>
-                            </div>
-                            </Card.Body>
-                        </Card>
+                {personalProjects.length > 0 && personalProjects.map((project,key)=>(
+                    <Col md={6} lg={4} style={{ padding: 10 }} data-aos='fade-down-right'  >
+                        
+                        <ProjectCard 
+                            description={project.description} 
+                            img={project.img}
+                            github_react={project.github_react}
+                            github_reactNative={project.github_reactNative} 
+                            />
                     </Col>
-                    <Col md={6} lg={{ span: 5, offset: 2 }} style={{ padding: 20 }} data-aos='fade-up-right' >
-                        <Card style={styles.cardStyle}  >
-                            <Card.Img className="p-5" variant="top" src="images/PROSHOP.png" />
-                            <Card.Body>
-
-                                <Card.Text>
-                                    This is an E-commerce Site built with MERN Stack (MongoDB, Express Js,
-                                    React JS, and Node Js). With Redux and PayPal Sandbox for mock payments
-                        </Card.Text>
-                            <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-
-                                <ButtonGroup aria-label="Basic example">
-                                    {/* <Button variant="dark" href="https://proshop1.herokuapp.com" target='blank'>Site Link</Button> */}
-                                    <Button variant="secondary" href="https://github.com/nitinvarda/proshop" target='blank'>Github Link</Button>
-                                    <Button variant="dark" href="https://github.com/nitinvarda/Proshop_ReactNative" target="blank">React Native Github Link</Button>
-                                </ButtonGroup>
-                            </div>
-                            </Card.Body>
-                        </Card>
-                    </Col>
+    
+    
+                ))}
                 </Row>
-                <Row>
-                    <Col md={6} lg={5} style={{ padding: 20 }} data-aos='fade-up-right' >
-                        <Card style={styles.cardStyle}>
-                            <Card.Img className="p-5" variant="top" src="images/TRENDINIT.png" />
-                            <Card.Body>
-
-                                <Card.Text>
-                                    This is a News Article Blog which is built with MERN Stack (MongoDB,
-                                    Express Js, React JS, and Node Js). Only Admin can add, edit, or delete posts
-                        </Card.Text>
-                            <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-
-                                <ButtonGroup aria-label="Basic example">
-                                    {/* <Button variant="dark" href="https://trendinit.herokuapp.com" target='blank'>Site Link</Button> */}
-                                    <Button variant="secondary" href="https://github.com/nitinvarda/trendinit-react-redux-" target='blank'>Github Link</Button>
-                                    <Button variant="dark" href="https://github.com/nitinvarda/Trendinit_ReactNative" target="blank">React Native Github Link</Button>
-                                </ButtonGroup>
-                            </div>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                    <Col md={6} lg={{ span: 5, offset: 2 }} style={{ padding: 20 }} data-aos='fade-down-right'>
-                        <Card style={styles.cardStyle}>
-                            <Card.Img className="p-5" variant="top" src="images/COVID-19.png" style={{ objectFit: 'cover' }} />
-
-                            <Card.Body>
-
-                                <Card.Text>
-                                    This is an E-commerce Site built with MERN Stack (MongoDB, Express Js,
-                                    React JS, and Node Js). With Redux and PayPal Sandbox for mock payments
-                                </Card.Text>
-                                <div style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
-
-                                    <ButtonGroup aria-label="Basic example">
-                                        <Button variant="dark" href="https://covid19indian-state.netlify.app" target="blank">Site Link</Button>
-                                        <Button variant="secondary" href="https://github.com/nitinvarda/covid19site" target="blank">Github Link</Button>
-
-                                    </ButtonGroup>
-                                </div>
-                            </Card.Body>
-                        </Card>
-                    </Col>
-                </Row>
+               
             </Container>
             </div>
         </div>
