@@ -49,7 +49,7 @@ export default function Skills() {
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
 
-                                <img src="images/updatedImages/redux.png" width="80px" height="75px" alt='redux '  />
+                                <img src={`images/updatedImages/redux${context.darkTheme ? '-d' : ''}.png`} width="80px" height="75px" alt='redux'  />
                             </div>
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>Redux</h5>
                         </div>
@@ -74,9 +74,9 @@ export default function Skills() {
                     <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
-                                <img src="images/updatedImages/express.png" width="70px" height="50vh" alt='express js' />
+                                <img src={`images/updatedImages/express${context.darkTheme ? '-d' : ''}.png`} width="70px" height="50px" alt='express js' />
                             </div>
-                            <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>Express Js</h5>
+                            <h5 className='text-center'  style={{color:Theme(context.darkTheme).textColor,paddingTop:25}}>Express Js</h5>
                         </div>
 
 
@@ -84,7 +84,7 @@ export default function Skills() {
                     <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up'>
                         <div style={styles.skillContainer} >
                             <div style={styles.imageCenter}>
-                                <img src="images/updatedImages/firebase.png" width="55px" height="75px" alt='jquery' />
+                                <img src={`images/updatedImages/firebase${context.darkTheme ? '-d' : ''}.png`} width="55px" height="75px" alt='jquery' />
                             </div>
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>Firebase</h5>
                         </div>
@@ -94,7 +94,7 @@ export default function Skills() {
                     <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-down-right'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
-                                <img src="images/bootstrap.png" width="65px" height="75px" alt='bootstrap' />
+                                <img src={`images/updatedImages/${context.darkTheme ? 'bootstrap-d' : 'bootstrap'}.png`} width="65px" height="75px" alt='bootstrap' />
                             </div>
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>Bootstrap</h5>
                         </div>
@@ -104,7 +104,7 @@ export default function Skills() {
                     <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-down'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
-                                <img src="images/updatedImages/MongoDb.png" width="35px" height="75px" alt='mongodb'  />
+                                <img src={`images/updatedImages/MongoDb${context.darkTheme ? '-d' : ''}.png`} width="35px" height="75px" alt='mongodb'  />
                             </div>
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>MongoDB</h5>
                         </div>
@@ -114,7 +114,7 @@ export default function Skills() {
                     <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up'>
                         <div style={styles.skillContainer} >
                             <div style={styles.imageCenter}>
-                                <img src="images/updatedImages/firebase.png" width="55px" height="75px" alt='jquery' />
+                                <img src={`images/updatedImages/materialUi${context.darkTheme ? '-d' : ''}.png`} width="55px" height="75px" alt='material Ui' style={{objectFit:'contain'}}/>
                             </div>
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>Material UI</h5>
                         </div>

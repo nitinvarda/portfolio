@@ -8,6 +8,7 @@ import Data from '../utils/Data';
 export default function Projects(props) {
     const context = useContext(AppContext);
     const {projects} = Data
+    console.log(projects)
   return (
     <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
 
@@ -49,8 +50,13 @@ export default function Projects(props) {
                     </Col>
                     
                     <Col lg={{order:item.name=='Riku' ? 2 : 1,span:6}} style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
-                        <h4 style={{color:Theme(context.darkTheme).textColor}}>{item.name}</h4>
-                        <p style={{color:Theme(context.darkTheme).textColor}}>{item.description}</p>
+                        {item.url ? (
+                            <a href={item.url} target='_blank'><h4 >{item.name}</h4></a>
+                        ) : (
+
+                            <h4 style={{color:Theme(context.darkTheme).textColor}}>{item.name}</h4>
+                        )}
+                        <p style={{color:Theme(context.darkTheme).textColor,fontSize:18}}>{item.description}</p>
                     </Col>
                     </Row>
                 )

@@ -12,9 +12,9 @@ export default function OpenSource() {
             <Section name="Open-Source" />
             <Row>
                 <Col>
-                    <h4 style={{color:Theme(context.darkTheme).textColor}}><a href='' style={{textDecoration:'none',color:Theme(context.darkTheme).textColor}}>React-Native-Esp-32-idf</a></h4>
+                    <h4 style={{color:Theme(context.darkTheme).textColor}}><a href='' >React-Native-Esp-32-idf</a></h4>
                     <h6 style={{color:Theme(context.darkTheme).textColor,lineHeight:1.5}}>
-                        I redesigned the react-native-esp-idf library as react-native-esp32-idf, 
+                        I redesigned the <a href='' >react-native-esp-idf</a> library as <a href="" >react-native-esp32-idf</a>, 
                         introducing significant modifications to enable seamless direct Wi-Fi 
                         networking for ESP devices within React Native apps. 
                         This shift revolutionizes the development landscape by 

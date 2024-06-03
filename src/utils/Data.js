@@ -56,39 +56,36 @@ let projects = [
                 description:''
             }
         ],
-        description:'Developed a hybrid mobile application tailored for controlling automated cooking appliances. Developed with React Native and SSL, the app offers intuitive interface functionality, allowing users to execute commands conveniently from their mobile devices.'
+        description:'Developed a hybrid mobile application tailored for controlling automated cooking appliances. Developed with React Native and SSL, the app offers intuitive interface functionality, allowing users to execute commands conveniently from their mobile devices.',
+        url:'https://www.klynk.app/'
     }
 ]
 
 let personalProjects =[
     {
+        description:'This is an E-commerce Site built with MERN Stack (MongoDB, Express Js, React JS, and Node Js). With Redux and PayPal Sandbox for mock payments',
+        img:'images/projectImages/PROSHOP.png',
+        img_d:'images/projectImages/PROSHOP-d.png',
+        name:'Proshop',
+        github_react:'https://github.com/nitinvarda/proshop',
+        github_reactNative:'https://github.com/nitinvarda/proshop-RN'
+    },
+    {
         description:'This is Restaurant website where you can reserve table on selected date and can add items to favorites . User should authenticate first to do any actions on site. It is made with MERN stack along with redux for state management.',
-        img:'images/RISTORANTE.png',
+        img:'images/projectImages/RISTORANTE.png',
+        img_d:'images/projectImages/RISTORANTE-d.png',
         name:'Ristorante',
         github_react:'https://github.com/nitinvarda/Confusion-fullstack',
         github_reactNative:'https://github.com/nitinvarda/reactnative-confusion'
     },
     {
-        description:'This is an E-commerce Site built with MERN Stack (MongoDB, Express Js, React JS, and Node Js). With Redux and PayPal Sandbox for mock payments',
-        img:'images/PROSHOP.png',
-        name:'Proshop',
-        github_react:'https://github.com/nitinvarda/proshop',
-        github_reactNative:'https://github.com/nitinvarda/Proshop_ReactNative'
-    },
-    {
         description:'This is a News Article Blog which is built with MERN Stack (MongoDB, Express Js, React JS, and Node Js). Only Admin can add, edit, or delete posts',
-        img:'images/TRENDINIT.png',
+        img:'images/projectImages/TRENDINIT.png',
+        img_d:'images/projectImages/TRENDINIT-d.png',
         name:'Trendinit',
         github_react:'https://github.com/nitinvarda/trendinit-react-redux-',
         github_reactNative:'https://github.com/nitinvarda/Trendinit_ReactNative'
-    },
-    {
-        description:'',
-        img:'images/COVID-19.png',
-        name:'Covid-19',
-        github_react:'https://covid19indian-state.netlify.app',
-        github_reactNative:'https://github.com/nitinvarda/covid19site'
-    },
+    }
 ]
 
 export default {experience,projects,personalProjects};

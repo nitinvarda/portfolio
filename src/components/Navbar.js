@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 // import './Navbar.css';
-import { Navbar, Nav, Container } from 'react-bootstrap'
+import { Navbar, Nav, Container, Form } from 'react-bootstrap'
 import AppContext from '../utils/AppContext';
 const NavBar = () => {
     const [showDetails,setShowDetails] = useState(false);
@@ -17,7 +17,7 @@ const NavBar = () => {
     });
     return (
 
-        <Navbar collapseOnSelect style={{ backgroundColor: '#222' }} expand="xl" variant="dark" fixed="top">
+        <Navbar collapseOnSelect style={{ backgroundColor: '#222',borderBottom:`${showDetails ? '1' : '0'}px solid white` }} expand="xl" variant="dark" fixed="top">
             <Container>
                 {/* <Navbar.Brand href="#home"><h3 style={{fontFamily:'Sacramento'}}>Nitin Varda</h3></Navbar.Brand> */}
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -31,7 +31,7 @@ const NavBar = () => {
                         <Nav.Link href="#about">About</Nav.Link>
                         <Nav.Link href="#skills" >Skills</Nav.Link>
                         <Nav.Link href="#project">Projects</Nav.Link>
-                        <Nav.Link href='' onClick={()=>context.changeTheme()}>Change Theme</Nav.Link>
+                        <Nav.Link  onClick={()=>context.changeTheme()} style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>{context.darkTheme ? 'Light Theme' : 'Dark Theme' }</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

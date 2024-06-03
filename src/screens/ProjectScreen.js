@@ -6,39 +6,41 @@ import Theme from '../utils/Theme'
 import AppContext from '../utils/AppContext'
 import Data from '../utils/Data'
 import ProjectCard from '../components/ProjectCard'
+import ProjectTile from '../components/ProjectTile'
 
 function ProjectScreen() {
     const context = useContext(AppContext);
     const {personalProjects} = Data;
     return (
-        <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
+        <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor,paddingBottom:20}}>
             
             <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor,position:'relative',height:80}}>
             <Container>
-
-            {/* <Particle  /> */}
             <Section name="Personal Projects" />
             </Container>
             </div>
             <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
 
-          
             <Container>
-                <Row>
+              <Row>
                 {personalProjects.length > 0 && personalProjects.map((project,key)=>(
-                    <Col md={6} lg={4} style={{ padding: 10 }} data-aos='fade-down-right'  >
+                    <Col md={6}  xs={12}  data-aos='fade-down-right'  >
                         
-                        <ProjectCard 
+                        <ProjectTile 
+                            index={key}
                             description={project.description} 
+                            name={project.name}
                             img={project.img}
-                            github_react={project.github_react}
-                            github_reactNative={project.github_reactNative} 
+                            img_d={project.img_d}
+                            react={project.github_react}
+                            reactNative={project.github_reactNative} 
                             />
-                    </Col>
+                     </Col>
     
     
                 ))}
                 </Row>
+               
                
             </Container>
             </div>

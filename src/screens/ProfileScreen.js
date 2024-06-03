@@ -8,7 +8,7 @@ import Theme from '../utils/Theme';
 function ProfileScreen(props) {
     const context = useContext(AppContext);
     
-    console.log(context)
+   
     return (
         <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor, width:'100%',height:'95vh',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
         
