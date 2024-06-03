@@ -1,12 +1,14 @@
 import React from 'react'
-import { Container, Col, Row } from 'react-bootstrap'
-import Particle from './Particle'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import Row  from 'react-bootstrap/Row'
 import './AboutScreen.css'
 
 function AboutScreen() {
     return (
        
-        <div >
+        <div  >
+            
             <Container>
                 <Row>
                     <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up-right'>

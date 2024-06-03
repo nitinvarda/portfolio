@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
-import { Card, Button, Col, Container, Row, ButtonGroup } from 'react-bootstrap'
-import Particle from './Particle'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import Row  from 'react-bootstrap/Row'
 import Section from '../components/Section'
 import Theme from '../utils/Theme'
 import AppContext from '../utils/AppContext'
 import Data from '../utils/Data'
-import ProjectCard from '../components/ProjectCard'
 import ProjectTile from '../components/ProjectTile'
 
 function ProjectScreen() {
@@ -48,30 +48,5 @@ function ProjectScreen() {
     )
 }
 
-
-const styles = {
-    projectHeading: {
-        background: 'url(/images/galaxy_comp.gif) no-repeat ',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'fixed',
-        height: 80,
-    },
-    projectTitle: {
-        color: 'white',
-        textAlign: 'center',
-        paddingTop: 10,
-    },
-    projectCardButtons: {
-        display: 'flex',
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        paddingTop: 15
-    },
-    cardStyle: {
-        borderRadius: 15,
-        padding: 20,
-        boxShadow: '0 2px 20px rgba(0,0,0,0.4)'
-    }
-}
 
 export default ProjectScreen

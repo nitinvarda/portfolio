@@ -1,13 +1,15 @@
 import React, { useContext } from 'react'
 import Theme from '../utils/Theme'
 import AppContext from '../utils/AppContext'
-import { Col, Container, Row } from 'react-bootstrap'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import Row  from 'react-bootstrap/Row'
 import Section from '../components/Section'
 
 export default function Skills() {
     const context = useContext(AppContext)
   return (
-    <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
+    <div  id="skills" style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
         <Container>
 
             <Section name="Skills" />

@@ -88,4 +88,10 @@ let personalProjects =[
     }
 ]
 
-export default {experience,projects,personalProjects};
+const AllData = {
+    experience,
+    projects,
+    personalProjects
+}
+
+export default AllData;

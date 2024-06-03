@@ -1,11 +1,13 @@
 import React, { useContext } from 'react'
 import Theme from '../utils/Theme'
-import { Col, Container, Row } from 'react-bootstrap'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import Row  from 'react-bootstrap/Row'
 import AppContext from '../utils/AppContext';
 
 export default function JobSection(props) {
     const context = useContext(AppContext);
-    const {item,index} = props;
+    const {item} = props;
     
   return (
    

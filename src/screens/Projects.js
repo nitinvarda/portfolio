@@ -1,5 +1,9 @@
 import React, { useContext } from 'react'
-import { Carousel, Col, Container, Image, Row } from 'react-bootstrap'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import Row  from 'react-bootstrap/Row'
+import Image  from 'react-bootstrap/Image'
+import Carousel  from 'react-bootstrap/Carousel'
 import Section from '../components/Section'
 import Theme from '../utils/Theme'
 import AppContext from '../utils/AppContext';
@@ -8,9 +12,8 @@ import Data from '../utils/Data';
 export default function Projects(props) {
     const context = useContext(AppContext);
     const {projects} = Data
-    console.log(projects)
   return (
-    <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
+    <div id="projects" style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
 
     <Container>
         <Section name="Projects" />
@@ -20,7 +23,7 @@ export default function Projects(props) {
                 return(
                     <Row >
                     <Col 
-                    lg={{order:item.name=='Riku' ? 1 : 2,span:6}} 
+                    lg={{order:item.name==='Riku' ? 1 : 2,span:6}} 
                     style={{display:'flex',justifyContent:'center',alignItems:'center'}}
                     >
                     <Carousel indicators={false} controls={false} fade >
@@ -37,7 +40,7 @@ export default function Projects(props) {
 
                               
                                  
-                                    <Image src={img.img}  style={{height:'100%',width:item.name=='Riku' ? '100%':'40%',borderRadius:5}}/>
+                                    <Image src={img.img}  style={{height:'100%',width:item.name==='Riku' ? '100%':'40%',borderRadius:5}}/>
                                     
                                
                                 
@@ -49,9 +52,9 @@ export default function Projects(props) {
                     </Carousel>
                     </Col>
                     
-                    <Col lg={{order:item.name=='Riku' ? 2 : 1,span:6}} style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+                    <Col lg={{order:item.name==='Riku' ? 2 : 1,span:6}} style={{display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
                         {item.url ? (
-                            <a href={item.url} target='_blank'><h4 >{item.name}</h4></a>
+                            <a href={item.url} target='_blank' rel="noreferrer"><h4 >{item.name}</h4></a>
                         ) : (
 
                             <h4 style={{color:Theme(context.darkTheme).textColor}}>{item.name}</h4>

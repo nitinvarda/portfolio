@@ -1,6 +1,6 @@
-import Particles from '@tsparticles/react'
+
 import React, { useContext } from 'react'
-import { Container, Row } from 'react-bootstrap'
+import Container from 'react-bootstrap/Container'
 import JobSection from '../components/JobSection'
 import Data from '../utils/Data';
 import Section from '../components/Section';
@@ -11,7 +11,7 @@ export default function Experience(props) {
     const context = useContext(AppContext);
     const {experience} = Data;
   return (
-    <div style={{
+    <div id="experience" style={{
         position:'relative',
         display:'flex',
         flexDirection:'row',
@@ -30,6 +30,7 @@ export default function Experience(props) {
             
       
        </Container>
+       
     </div>
   )
 }

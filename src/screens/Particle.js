@@ -1,10 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 // import Particles from "react-particles-js";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import AppContext from "../utils/AppContext";
+import Theme from "../utils/Theme";
 
 const Canvas=(props)=> {
   const [ init, setInit ] = useState(false);
+  const context = useContext(AppContext);
 
   // this should be run only once per application lifetime
   useEffect(() => {
@@ -40,7 +43,7 @@ const Canvas=(props)=> {
                 },
             },
             color: {
-                value: "#ffffff",
+                value: Theme(context.darkTheme).textColor,
                 animation: {
                     enable: true,
                     speed: 20,
@@ -62,13 +65,13 @@ const Canvas=(props)=> {
             links: {
                 enable: true,
                 distance: 100,
-                color: "#ffffff",
+                color: Theme(context.darkTheme).textColor,
                 opacity: 0.5,
                 width: 1,
             },
             move: {
                 enable: true,
-                speed: 2.5,
+                speed: 1.5,
             },
             life: {
                 duration: {
@@ -105,7 +108,7 @@ const Canvas=(props)=> {
             },
         },
         background: {
-            color: "#222222",
+            color: Theme(context.darkTheme).backgroundColor,
         },
           
         }}

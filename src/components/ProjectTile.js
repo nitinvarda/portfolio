@@ -1,5 +1,8 @@
 import React, { useContext } from 'react'
-import { Button, ButtonGroup, Col, Row } from 'react-bootstrap'
+import Col from 'react-bootstrap/Col'
+import Row  from 'react-bootstrap/Row'
+import ButtonGroup  from 'react-bootstrap/ButtonGroup'
+import Button  from 'react-bootstrap/Button'
 import AppContext from '../utils/AppContext';
 import Theme from '../utils/Theme';
 

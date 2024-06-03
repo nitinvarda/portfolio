@@ -1,6 +1,9 @@
 import React, { useContext, useState } from 'react';
 // import './Navbar.css';
-import { Navbar, Nav, Container, Form } from 'react-bootstrap'
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
+import Navbar  from 'react-bootstrap/Navbar'
+
 import AppContext from '../utils/AppContext';
 const NavBar = () => {
     const [showDetails,setShowDetails] = useState(false);
@@ -28,9 +31,10 @@ const NavBar = () => {
                         </Nav>
                     }
                     <Nav className='ml-auto'>
-                        <Nav.Link href="#about">About</Nav.Link>
-                        <Nav.Link href="#skills" >Skills</Nav.Link>
-                        <Nav.Link href="#project">Projects</Nav.Link>
+                        <Nav.Link href="#experience">Experience</Nav.Link>
+                        <Nav.Link href="#open_source" >Open-Source</Nav.Link>
+                        <Nav.Link href="#projects">Projects</Nav.Link>
+                        <Nav.Link href="#skills">Skills</Nav.Link>
                         <Nav.Link  onClick={()=>context.changeTheme()} style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>{context.darkTheme ? 'Light Theme' : 'Dark Theme' }</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
