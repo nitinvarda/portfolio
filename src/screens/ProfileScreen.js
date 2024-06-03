@@ -64,7 +64,7 @@ function ProfileScreen(props) {
                             fontStyle:'italic',
                             fontSize:`clamp(1.4rem ,  -0.875rem + 6.333vw, 2.2rem)`,
                             color:Theme(context.darkTheme).textColor
-                            }}>Hi there ! I am a passionate <br /> <em><b style={{color:'green'}}>Software Developer</b></em> <br /> with two years of hands-on experience in crafting digital solutions. My journey in the world of coding has been a thrilling ride, and I'm excited to learn new skills.</h3>
+                            }}>Hi there ! I am a passionate <br /> <em><b style={{color:'green'}}>Software Engineer</b></em> <br /> with four years of hands-on experience in crafting digital solutions. My journey in the world of coding has been a thrilling ride, and I'm excited to learn new skills.</h3>
                     </div>
                 </Col>
             </Row>
