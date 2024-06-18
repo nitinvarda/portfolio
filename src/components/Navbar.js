@@ -26,7 +26,7 @@ const NavBar = () => {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     {showDetails && 
-                        <Nav >
+                        <Nav className='mr-auto'>
                             <h6 className='text-center  text-white' style={{fontFamily:'Sacramento',fontSize:`clamp(2.0rem ,  -0.875rem + 9.333vw, 2.3rem)`,margin:2,}}>Nitin Varda</h6>
                         </Nav>
                     }
@@ -35,7 +35,7 @@ const NavBar = () => {
                         <Nav.Link href="#open_source" >Open-Source</Nav.Link>
                         <Nav.Link href="#projects">Projects</Nav.Link>
                         <Nav.Link href="#skills">Skills</Nav.Link>
-                        <Nav.Link  onClick={()=>context.changeTheme()} style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>{context.darkTheme ? 'Light Theme' : 'Dark Theme' }</Nav.Link>
+                        <Nav.Link  onClick={()=>context.changeTheme()} >{context.darkTheme ? 'Light Theme' : 'Dark Theme' }</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>
