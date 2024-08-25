@@ -9,7 +9,11 @@ import Section from '../components/Section'
 export default function OpenSource() {
     const context = useContext(AppContext)
   return (
-    <div id='open_source' style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
+    <div id='open_source' style={{
+        backgroundColor:Theme(context.darkTheme).backgroundColor,
+        paddingTop:"50px",
+        paddingBottom:"100px"
+        }}>
         <Container>
             <Section name="Open-Source" />
             <Row>

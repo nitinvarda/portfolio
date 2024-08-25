@@ -5,17 +5,29 @@ import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Row  from 'react-bootstrap/Row'
 import Section from '../components/Section'
+import SectionTemplate from '../components/SectionTemplate'
 
 export default function Skills() {
     const context = useContext(AppContext)
   return (
-    <div  id="skills" style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
-        <Container>
+    <SectionTemplate>
 
-            <Section name="Skills" />
+  
+    <div  id="skills" style={{
+        backgroundColor:Theme(context.darkTheme).backgroundColor,
+        display:'flex',
+        flexDirection:'row',
+        justifyContent:'center',
+        alignItems:'center',
+        height:'100%'
+        
+        }}>
+        <Container >
+
+            {/* <Section name="Skills" /> */}
 
             <Row>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up-right'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-up-right'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <i className='fab fa-html5 fa-5x' style={{color:Theme(context.darkTheme).textColor}}></i>
@@ -23,7 +35,7 @@ export default function Skills() {
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>HTML 5</h5>
                         </div>
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-down' >
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-down' >
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <i className='fab fa-css3-alt fa-5x'  style={{color:Theme(context.darkTheme).textColor}}></i>
@@ -31,7 +43,7 @@ export default function Skills() {
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>CSS 3</h5 >
                         </div>
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-up'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <i className='fab fa-js-square fa-5x'  style={{color:Theme(context.darkTheme).textColor}}></i>
@@ -39,7 +51,7 @@ export default function Skills() {
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>JavaScript</h5>
                         </div>
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up-right'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-up-right'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <i className='fab fa-react fa-5x'  style={{color:Theme(context.darkTheme).textColor}}></i>
@@ -47,7 +59,7 @@ export default function Skills() {
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>React Js</h5>
                         </div>
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-down'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-down'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
 
@@ -57,7 +69,7 @@ export default function Skills() {
                         </div>
                     </Col>
 
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-up'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <i className='fab fa-node-js fa-5x'  style={{color:Theme(context.darkTheme).textColor}}></i>
@@ -65,7 +77,7 @@ export default function Skills() {
                             <h5 className='text-center py-2 '  style={{color:Theme(context.darkTheme).textColor}} >Node Js</h5>
                         </div>
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-down'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-down'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <i className='fab fa-react fa-5x'  style={{color:Theme(context.darkTheme).textColor}}></i>
@@ -73,7 +85,7 @@ export default function Skills() {
                             <h5 className='text-center py-2'  style={{color:Theme(context.darkTheme).textColor}}>React Native</h5>
                         </div>
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-up'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <img src={`images/updatedImages/express${context.darkTheme ? '-d' : ''}.png`} width="70px" height="50px" alt='express js' />
@@ -83,7 +95,7 @@ export default function Skills() {
 
 
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-up'>
                         <div style={styles.skillContainer} >
                             <div style={styles.imageCenter}>
                                 <img src={`images/updatedImages/firebase${context.darkTheme ? '-d' : ''}.png`} width="55px" height="75px" alt='jquery' />
@@ -93,7 +105,7 @@ export default function Skills() {
 
 
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-down-right'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-down-right'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <img src={`images/updatedImages/${context.darkTheme ? 'bootstrap-d' : 'bootstrap'}.png`} width="65px" height="75px" alt='bootstrap' />
@@ -103,7 +115,7 @@ export default function Skills() {
 
 
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-down'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-down'>
                         <div style={styles.skillContainer}>
                             <div style={styles.imageCenter}>
                                 <img src={`images/updatedImages/MongoDb${context.darkTheme ? '-d' : ''}.png`} width="35px" height="75px" alt='mongodb'  />
@@ -113,7 +125,7 @@ export default function Skills() {
 
 
                     </Col>
-                    <Col style={styles.skillCol} xs={6} sm={4} md={3} lg={2} data-aos='fade-up'>
+                    <Col style={styles.skillCol} xs={4} sm={4} md={3} lg={2} data-aos='fade-up'>
                         <div style={styles.skillContainer} >
                             <div style={styles.imageCenter}>
                                 <img src={`images/updatedImages/materialUi${context.darkTheme ? '-d' : ''}.png`} width="55px" height="75px" alt='material Ui' style={{objectFit:'contain'}}/>
@@ -129,6 +141,7 @@ export default function Skills() {
                 </Row>
         </Container>
     </div>
+    </SectionTemplate>
   )
 }
 

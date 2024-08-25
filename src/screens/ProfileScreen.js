@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container'
 import Row  from 'react-bootstrap/Row'
 import AppContext from '../utils/AppContext'
 import Theme from '../utils/Theme';
+import SectionTemplate from '../components/SectionTemplate'
 
 
 function ProfileScreen(props) {
@@ -11,12 +12,22 @@ function ProfileScreen(props) {
     
    
     return (
-       
-        <div style={{position:'relative',backgroundColor:Theme(context.darkTheme).backgroundColor, width:'100%',height:'95vh',display:'flex',flexDirection:'column',justifyContent:'center',alignItems:'center'}}>
+       <SectionTemplate >
+        <div style={{
+            position:'relative',
+            backgroundColor:Theme(context.darkTheme).backgroundColor, 
+            width:'100%',
+            height:'100%',
+            display:'flex',
+            flexDirection:'column',
+            justifyContent:'center',
+            alignItems:'center',
+           
+            }}>
       
-      {/* <Particle id="profileScreen-particles" /> */}
+      
         
-        <Container >
+        <Container style={{display:'flex',flexDirection:'column',justifyContent:'space-around',height:'80%'}} >
             <Row   style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}} >
                 <Col lg={5}  style={{display:'flex',flexDirection:'row',justifyContent:'center',alignItems:'center'}}>
            
@@ -68,11 +79,10 @@ function ProfileScreen(props) {
                     </div>
                 </Col>
             </Row>
-
-     
-      
+   
           </Container>
           </div>
+          </SectionTemplate>
           
         
         

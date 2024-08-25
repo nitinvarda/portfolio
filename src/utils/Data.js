@@ -88,10 +88,32 @@ let personalProjects =[
     }
 ]
 
-const AllData = {
+
+
+const AllRoutes = [
+    {
+        route:"/",
+        name:"Home"
+    },
+    {
+        route:"/Experience",
+        name:"Experience"
+    },
+    {
+        route:"/Projects",
+        name:"Projects"
+    },
+    {
+        route:"/Skills",
+        name:"Skills"
+    }
+]
+
+
+
+export  {
     experience,
     projects,
-    personalProjects
-}
-
-export default AllData;
+    personalProjects,
+    AllRoutes
+};

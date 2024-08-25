@@ -5,18 +5,23 @@ import Row  from 'react-bootstrap/Row'
 import Section from '../components/Section'
 import Theme from '../utils/Theme'
 import AppContext from '../utils/AppContext'
-import Data from '../utils/Data'
+import {personalProjects} from '../utils/Data'
 import ProjectTile from '../components/ProjectTile'
+import SectionTemplate from '../components/SectionTemplate'
+import OpenSource from './OpenSource'
 
 function ProjectScreen() {
     const context = useContext(AppContext);
-    const {personalProjects} = Data;
+  
     return (
+        <SectionTemplate >
+
+     
         <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor,paddingBottom:20}}>
             
             <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor,position:'relative',height:80}}>
             <Container>
-            <Section name="Personal Projects" />
+            {/* <Section name="Personal Projects" /> */}
             </Container>
             </div>
             <div style={{backgroundColor:Theme(context.darkTheme).backgroundColor}}>
@@ -45,6 +50,8 @@ function ProjectScreen() {
             </Container>
             </div>
         </div>
+     
+        </SectionTemplate>
     )
 }
 

@@ -5,6 +5,10 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import {
+  createBrowserRouter,
+  RouterProvider,
+} from "react-router-dom";
 
 
 AOS.init();
