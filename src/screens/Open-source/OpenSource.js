@@ -1,13 +1,17 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import Col from 'react-bootstrap/Col'
 import Container from 'react-bootstrap/Container'
 import Row  from 'react-bootstrap/Row'
-import AppContext from '../utils/AppContext'
-import Theme from '../utils/Theme'
-import Section from '../components/Section'
+import AppContext from '../../utils/AppContext'
+import Theme from '../../utils/Theme'
+import Section from '../../components/Section'
+import { Link, Navigate } from 'react-router-dom'
 
 export default function OpenSource() {
     const context = useContext(AppContext)
+
+  
+    
   return (
     <div id='open_source' style={{
         backgroundColor:Theme(context.darkTheme).backgroundColor,
@@ -30,6 +34,8 @@ export default function OpenSource() {
                         new <b>NPM package</b> , providing developers with unsurpassed convenience and speed 
                         when utilizing ESP32 features in their projects.
                     </h6>
+
+                    <Link to={"/open-source/case-study"} preventScrollReset={false}>Case Study</Link><p> </p>
                 </Col>
 
             </Row>

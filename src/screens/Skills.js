@@ -138,7 +138,7 @@ export default function Skills() {
                   
 
 
-                </Row>
+            </Row>
         </Container>
     </div>
     </SectionTemplate>

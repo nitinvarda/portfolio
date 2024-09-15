@@ -7,7 +7,6 @@ import { Link, useLocation } from 'react-router-dom'
 export default function RoutesTemplate(props) {
   const context = useContext(AppContext)
   const location = useLocation()
-  console.log(location.pathname,props.route,location.pathname===props.route)
   return (
     <Col xs={3}  style={{
       display:'flex',

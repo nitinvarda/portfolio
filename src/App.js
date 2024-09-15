@@ -10,6 +10,8 @@ import Theme from './utils/Theme';
 import { Container, Row } from 'react-bootstrap';
 import RoutesTemplate from './components/RoutesTemplate';
 import {AllRoutes} from "./utils/Data"
+import OpenSourceCaseStudy from './screens/Open-source/OpenSourceCaseStudy';
+import ScrollToTop from './components/ScrollToTop';
 
 
 function App() {
@@ -46,14 +48,16 @@ const changeTheme = () =>{
     <div >
       
       <BrowserRouter>
+   
       <Routes>
        
         <Route path="/" element={<Layout darkTheme={darkTheme} changeTheme={changeTheme} />} >
 
           <Route index element={<ProfileScreen />} />
-          <Route path="/Projects" element={<Projects />} />
-          <Route path="/Skills" element={<Skills />} />
-          <Route path="/Experience" element={<Experience sticky={onWorkExperience} />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/skills" element={<Skills />} />
+          <Route path="/experience" element={<Experience sticky={onWorkExperience} />} />
+          <Route path="/open-source/case-study" element={<OpenSourceCaseStudy  />} />
   
         </Route>
   
@@ -80,7 +84,7 @@ const changeTheme = () =>{
     </div>
     <div style={{
       position:'fixed',
-      top:'9vh',
+      top:'15vh',
       right:0,
       width:'60px',
       height:'60px',
@@ -115,9 +119,7 @@ const Layout = ({darkTheme}) =>{
 
   return(
     <div>
-
-
-    <div style={{
+    {/* <div style={{
       backgroundColor:Theme(darkTheme).backgroundColor,
       position:'fixed',
       top:0,
@@ -133,25 +135,56 @@ const Layout = ({darkTheme}) =>{
       }}>
 
   
-      {/* <NavBar /> */}
+      
       <Container  style={{
         //  display:'flex',
          flexDirection:'row',
          justifyContent:'space-between',
          alignItems:'center',
          width:'100%',
-         
-        
       }}>
-
         <Row >
           {AllRoutes.map(route=>(
             <RoutesTemplate route={route.route} name={route.name} />
           ))}
+        </Row>
+      </Container>
+      </div> */}
 
-        
-                  
+
+      <div style={{
+      position:'sticky',
+      top:0,
+      left:0,
+      right:0,
+      display:'flex',
+      flexDirection:'row',
+      alignItems:'center',
+      // height:'8vh',
+      width:'100%',
+      // borderBottom:`1px solid ${Theme(darkTheme).textColor}`,
+      backgroundColor:Theme(darkTheme).backgroundColor,
+      zIndex:1000
+      }}>
+
   
+  
+      <Container  style={{
+
+         flexDirection:'row',
+         justifyContent:'space-between',
+         alignItems:'center',
+         width:`clamp(80% ,  90%, 100%)`,
+         marginTop:'5vh',
+         marginBottom:30,
+         border:`3px solid ${Theme(darkTheme).textColor}`,
+         borderRadius:50,
+         backgroundColor:Theme(darkTheme).backgroundColor,
+      }}>
+        <Row >
+          {AllRoutes.map(route=>(
+            <RoutesTemplate route={route.route} name={route.name} />
+          ))}
         </Row>
       </Container>
       </div>

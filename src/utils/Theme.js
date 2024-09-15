@@ -1,6 +1,6 @@
 var Theme= (value) => ({
-    textColor:value ?  '#d9d9d9': '#222222' ,
-    backgroundColor: value ? '#222222' : "#d9d9d9"
+    textColor:value ?  '#e6e6e6': '#222222' ,
+    backgroundColor: value ? '#222222' : "#e6e6e6"
 })
 
 export default Theme;

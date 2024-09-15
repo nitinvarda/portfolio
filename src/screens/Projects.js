@@ -9,7 +9,7 @@ import Theme from '../utils/Theme'
 import AppContext from '../utils/AppContext';
 import {projects} from '../utils/Data';
 import SectionTemplate from '../components/SectionTemplate'
-import OpenSource from './OpenSource'
+import OpenSource from './Open-source/OpenSource'
 
 export default function Projects(props) {
     const context = useContext(AppContext);

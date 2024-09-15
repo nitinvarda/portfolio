@@ -9,12 +9,14 @@ import {
   createBrowserRouter,
   RouterProvider,
 } from "react-router-dom";
+import ScrollToTop from './components/ScrollToTop';
 
 
 AOS.init();
 
 ReactDOM.render(
   <React.StrictMode>
+
     <App />
   </React.StrictMode>,
   document.getElementById('root')
